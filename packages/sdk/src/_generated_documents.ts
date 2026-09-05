@@ -4124,9 +4124,7 @@ export type Entity = {
 
 /** Union type for webhook actor payloads */
 export type EntityActorWebhookPayload =
-  | IntegrationActorWebhookPayload
-  | OauthClientActorWebhookPayload
-  | UserActorWebhookPayload;
+  IntegrationActorWebhookPayload | OauthClientActorWebhookPayload | UserActorWebhookPayload;
 
 /** An external link for an entity like initiative, etc... */
 export type EntityExternalLink = Node & {
@@ -4297,9 +4295,7 @@ export type ExternalEntityInfoJiraMetadata = {
 };
 
 export type ExternalEntityInfoMetadata =
-  | ExternalEntityInfoGithubMetadata
-  | ExternalEntityInfoJiraMetadata
-  | ExternalEntitySlackMetadata;
+  ExternalEntityInfoGithubMetadata | ExternalEntityInfoJiraMetadata | ExternalEntitySlackMetadata;
 
 /** Metadata about the external Slack entity. */
 export type ExternalEntitySlackMetadata = {
@@ -12693,8 +12689,7 @@ export type OrganizationInviteCreateInput = {
 };
 
 export type OrganizationInviteDetailsPayload =
-  | OrganizationAcceptedOrExpiredInviteDetailsPayload
-  | OrganizationInviteFullDetailsPayload;
+  OrganizationAcceptedOrExpiredInviteDetailsPayload | OrganizationInviteFullDetailsPayload;
 
 export type OrganizationInviteEdge = {
   __typename?: "OrganizationInviteEdge";
